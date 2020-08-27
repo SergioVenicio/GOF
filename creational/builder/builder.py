@@ -48,7 +48,8 @@ class AppartmentBuilder(Builder):
             WALLS [{self.walls}]
             WINDOWS [{self.windows}]
             ROOMS [{self.rooms}]
-            BATHROOMS [{self.bathrooms}]'''
+            BATHROOMS [{self.bathrooms}]
+        '''
 
     def build_floor(self):
         self.floor = 1

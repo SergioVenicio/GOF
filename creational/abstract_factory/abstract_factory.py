@@ -18,7 +18,7 @@ class AbstractFactory(ABC):
 
 
 class AnimalFactory(AbstractFactory):
-    def create(self):
+    def create(self) -> Animal:
         new_instance = self.instance_factory()
         return new_instance
 
