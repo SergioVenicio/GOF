@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-from typing import Optional
-
 
 class Handler(ABC):
     _next = None
