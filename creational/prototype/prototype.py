@@ -1,4 +1,4 @@
-class ProtoType:
+class Prototype:
     def clone(self, **kwargs):
         instance = self.__class__()
         instance.__dict__.update(kwargs)
@@ -7,8 +7,8 @@ class ProtoType:
 
 
 if __name__ == '__main__':
-    person = ProtoType().clone(name="Test", age=25)
-    user = ProtoType().clone(id=1, **person.__dict__)
+    person = Prototype().clone(name="Test", age=25)
+    user = Prototype().clone(id=1, **person.__dict__)
 
     print(person.name)
     print(person.age)
