@@ -27,7 +27,6 @@ if __name__ == '__main__':
     text.add_word('Test 4')
 
     print('\n'.join(text))
-
     print('***')
 
     reverse_text = Words(reverse=True)
