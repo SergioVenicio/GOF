@@ -43,12 +43,12 @@ class ObserverInterface(ABC):
         pass
 
 
-class Observer(ObserverInterface):
+class Number(ObserverInterface):
     _id = 1
 
     def __init__(self):
-        self._id = Observer._id
-        Observer._id += 1
+        self._id = Number._id
+        Number._id += 1
         
     def update(self, subject):
         if subject._state % 2 == 0:
@@ -57,12 +57,11 @@ class Observer(ObserverInterface):
             print(f"[{self._id}] {subject._state} IS ODD")
 
 
-
 if __name__ == '__main__':
     subject = Subject()
 
     for _ in range(10):
-        observer = Observer()
+        observer = Number()
         subject.attach(observer)
 
     for _ in range(5):
